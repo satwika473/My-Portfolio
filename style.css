@@ -609,11 +609,17 @@ h2 {
     .sidebar.expanded .social-media a {
         font-size: 20px; padding: 10px;
     }
+  
     #section1, #section2, #section3, #section4, #section5, #section6 , #section7 {
         margin: 0 0 0 80px;
-    }
-    #section1, #section2, #section3, #section4, #section5, #section6 , #section7 {
-        display:inline
+        display:inline;
+        flex-direction: column; 
+        margin: 10px; 
+        padding: 20px; 
+      
+        gap: 20px;
+        border:none;
+        height:700px;
     }
     .image-container {
         position: relative;
@@ -627,14 +633,7 @@ h2 {
         margin: 0 0 0 150px; /* Adjust margin for smaller screens */
     }
 
-    #section1 ,#section2, #section3, #section4, #section5, #section6 , #section7 {
-        flex-direction: column; 
-        margin: 10px; 
-        padding: 20px; 
-        height: auto; 
-        gap: 20px;
-        border:none
-    }
+   
     
 .title{
     font-size: large;
@@ -646,6 +645,11 @@ h2 {
     }
     .main-content {
         margin: 0 0 0 200px;
+        margin-left: 80px; 
+        transition: margin-left 0.3s ease; 
+    }
+    .sidebar.expanded ~ .main-content {
+        margin-left: 250px; 
     }
     .intro{
         text-align: center;
