@@ -193,12 +193,21 @@ body {
     border: 2px solid #333;
     padding: 15px 20px;
     min-width: 250px;
-    background-color: #656262;
+  
     font-size: 16px;
+    background-color: #222; /* Dark background */
+    padding: 15px 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    box-shadow: 0 4px 8px rgba(252, 159, 10, 0.3);
 }
-
-strong {
-    font-weight: bold;
+.info-box strong ,.details-section strong{
+    color: #FFD700; /* Yellow color for field name */
+}
+.details-section{
+    line-height: 2.5rem;
 }
 .signature {
     margin-top: 30px;
@@ -228,6 +237,7 @@ strong {
 	transform: scale(0.9);
 	border-radius: 6px;
 	transform-origin: left;
+    box-shadow: 4px 4px 8px rgba(255, 174, 43, 0.5);
 }
 
 .book-cover {
@@ -245,6 +255,7 @@ strong {
 	background-color: #ee8f00;
 	color: white;
 	transition: transform 2s;
+    
 }
 
 .book-cover::before {
@@ -297,9 +308,15 @@ h2 {
     color: black;
 }
 
-.book-content h3,
+.book-content h3{
+    font-size: 30px;
+    font-family:'Brush Script MT', cursive;  
+}
 .book-content p {
 	opacity: 0;
+    padding:20px;
+    font-size: 20px;
+    font-family:'Brush Script MT', cursive;  ;
 	transition: all 0.3s 0.3s;
 }
 
@@ -630,7 +647,7 @@ h2 {
         align-items: center;
     }
     .main-content {
-        margin: 0 0 0 150px; /* Adjust margin for smaller screens */
+        margin: 0 0 0 150px;
     }
 
    
@@ -648,6 +665,15 @@ h2 {
         margin-left: 80px; 
         transition: margin-left 0.3s ease; 
     }
+    .main-content p {
+        text-align: left;
+        margin: 20px auto;
+        padding: 0 20px;
+        max-width: 700px;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    
     .sidebar.expanded ~ .main-content {
         margin-left: 250px; 
     }
@@ -662,7 +688,55 @@ h2 {
        display: inline;
         gap: 15px; 
     }
-
+    .info-grid {
+        display: flex;
+   
+        gap: 20px;
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+    }
+    
+    .info-box {
+        background-color: #222; /* Dark background */
+        padding: 15px 20px;
+        border-radius: 10px;
+        color: #fff;
+        font-size: 18px;
+        line-height: 1.5;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    
+    .info-box strong {
+        color: #FFD700; /* Yellow color for field name */
+    }
+    
+    .details-section {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .details-section a i{
+        color: white;
+        
+    }
+    .details-section a {
+        color: white;
+        
+    }
+    
+    .details-section p {
+        background-color: #222;
+        color: #fff;
+        margin: 10px 0;
+        padding: 12px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.5;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    
     .info-box {
         width: 150px; 
         text-align: center;
@@ -670,6 +744,7 @@ h2 {
     }
     .grid1 {
         display: flex;
+        align-items: center;
         justify-content: center;
         flex-direction: column; 
         gap: 20px; 
